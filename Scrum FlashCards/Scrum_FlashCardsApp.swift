@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct Scrum_FlashCardsApp: App {
@@ -13,5 +14,6 @@ struct Scrum_FlashCardsApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: [CardProgress.self, LevelProgress.self])
     }
 }
