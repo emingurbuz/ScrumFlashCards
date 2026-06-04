@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "A01",
+    "prompt": "The commitment for the Product Backlog is the",
+    "suffix": ".",
+    "answer": "Product Goal",
+    "distractors": [
+      "Sprint Goal",
+      "Definition of Done",
+      "Increment"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A02",
+    "prompt": "In Nexus, integration issues across teams are surfaced during the",
+    "suffix": ".",
+    "answer": "Nexus Daily Scrum",
+    "distractors": [
+      "Nexus Sprint Planning",
+      "Nexus Sprint Review",
+      "Nexus Retrospective"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A03",
+    "prompt": "When multiple Scrum Teams work on the same product, they share a single",
+    "suffix": ".",
+    "answer": "Product Backlog",
+    "distractors": [
+      "Sprint Backlog",
+      "Scrum Master",
+      "Definition of Done"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A04",
+    "prompt": "Technical debt is best managed by",
+    "suffix": ".",
+    "answer": "evolving the Definition of Done",
+    "distractors": [
+      "scheduling a separate debt Sprint",
+      "ignoring it until release",
+      "assigning it to a senior developer"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A05",
+    "prompt": "If the Sprint Goal becomes obsolete, the Sprint",
+    "suffix": ".",
+    "answer": "may be cancelled by the Product Owner",
+    "distractors": [
+      "continues unchanged",
+      "is automatically cancelled",
+      "is extended by one week"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A06",
+    "prompt": "A Scrum Master sees managers assigning Sprint tasks directly to Developers. The best first response is to coach the organization on",
+    "suffix": ".",
+    "answer": "self-management",
+    "distractors": [
+      "resource utilization",
+      "phase-gate reporting",
+      "individual task ownership by managers"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A07",
+    "prompt": "A Product Owner is pressured to accept unfinished work at Sprint Review. The most professional response is to keep the work out of the Increment until it meets",
+    "suffix": ".",
+    "answer": "the Definition of Done",
+    "distractors": [
+      "the estimate",
+      "stakeholder preference",
+      "the demo script"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A08",
+    "prompt": "A team has a Sprint Goal but treats it as optional when new requests arrive. The deeper issue is weak commitment to",
+    "suffix": ".",
+    "answer": "focus",
+    "distractors": [
+      "velocity",
+      "tooling",
+      "estimation"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A09",
+    "prompt": "A Scrum Team completes many tasks but delivers no usable Increment. The main empirical problem is lack of transparent",
+    "suffix": ".",
+    "answer": "value progress",
+    "distractors": [
+      "individual effort",
+      "meeting attendance",
+      "time tracking"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A10",
+    "prompt": "When a Scrum implementation hides organizational dysfunction, it is likely being used as",
+    "suffix": ".",
+    "answer": "mechanical Scrum",
+    "distractors": [
+      "empirical Scrum",
+      "Professional Scrum",
+      "lean product discovery"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A11",
+    "prompt": "The Scrum Master should address recurring spillover by helping the Scrum Team inspect planning, slicing, dependencies, and",
+    "suffix": ".",
+    "answer": "Done",
+    "distractors": [
+      "job titles",
+      "meeting names",
+      "tool configuration"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A12",
+    "prompt": "A stakeholder asks to extend the Sprint to finish more scope. The Scrum Master's strongest teaching point is that Sprint length is",
+    "suffix": ".",
+    "answer": "fixed",
+    "distractors": [
+      "optional",
+      "set by stakeholders each week",
+      "extended when work is important"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A13",
+    "prompt": "A Product Owner uses the Product Backlog as a list of stakeholder requests without a Product Goal. The risk is loss of strategic",
+    "suffix": ".",
+    "answer": "coherence",
+    "distractors": [
+      "activity",
+      "documentation",
+      "attendance"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A14",
+    "prompt": "A Scrum Team with many dependencies outside the team should first make those dependencies transparent and work to reduce",
+    "suffix": ".",
+    "answer": "them",
+    "distractors": [
+      "the Sprint Goal",
+      "the Product Goal",
+      "stakeholder feedback"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A15",
+    "prompt": "If the organization measures teams mainly by velocity, it may encourage output over",
+    "suffix": ".",
+    "answer": "outcome",
+    "distractors": [
+      "estimation",
+      "forecasting",
+      "team stability"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A16",
+    "prompt": "A Scrum Master should challenge a Definition of Done that permits known defects because it undermines",
+    "suffix": ".",
+    "answer": "transparency",
+    "distractors": [
+      "stakeholder attendance",
+      "backlog ordering",
+      "Sprint length"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A17",
+    "prompt": "When the Product Owner is a committee, the Scrum Master should teach that Scrum requires one accountable",
+    "suffix": ".",
+    "answer": "Product Owner",
+    "distractors": [
+      "manager",
+      "stakeholder group",
+      "business analyst"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A18",
+    "prompt": "A Product Owner delegates backlog ordering to analysts. This is acceptable only if the Product Owner remains",
+    "suffix": ".",
+    "answer": "accountable",
+    "distractors": [
+      "uninvolved",
+      "anonymous",
+      "technical"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A19",
+    "prompt": "A Sprint Review used only for sign-off weakens the opportunity for collaborative",
+    "suffix": ".",
+    "answer": "adaptation",
+    "distractors": [
+      "estimation",
+      "individual assessment",
+      "budgeting"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A20",
+    "prompt": "A Daily Scrum that focuses on three status questions to the Scrum Master should be redirected toward progress against",
+    "suffix": ".",
+    "answer": "the Sprint Goal",
+    "distractors": [
+      "the Product Goal only",
+      "the annual budget",
+      "the team charter"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A21",
+    "prompt": "A Scrum Team repeatedly cannot produce Done work because testing is outside the team. The key capability gap is",
+    "suffix": ".",
+    "answer": "cross-functionality",
+    "distractors": [
+      "stakeholder management",
+      "Product Goal ownership",
+      "contract negotiation"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A22",
+    "prompt": "A Scrum Master should not remove all impediments personally because doing so may reduce the team's",
+    "suffix": ".",
+    "answer": "self-management",
+    "distractors": [
+      "technical excellence",
+      "stakeholder access",
+      "value focus"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A23",
+    "prompt": "If several Scrum Teams work on one product with different Definitions of Done, transparency of the integrated Increment is",
+    "suffix": ".",
+    "answer": "weakened",
+    "distractors": [
+      "improved",
+      "irrelevant",
+      "guaranteed"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A24",
+    "prompt": "When multiple Scrum Teams work on one product, separate Product Owners create a risk of conflicting",
+    "suffix": ".",
+    "answer": "value decisions",
+    "distractors": [
+      "Daily Scrum times",
+      "Sprint lengths",
+      "developer skills"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A25",
+    "prompt": "A senior leader wants Scrum to preserve existing silos. The Scrum Master should explain that Scrum will expose where silos limit",
+    "suffix": ".",
+    "answer": "value delivery",
+    "distractors": [
+      "meeting attendance",
+      "certification",
+      "job grades"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A26",
+    "prompt": "A Scrum Team treats Sprint Planning as task assignment by the Product Owner. The Scrum value most directly at risk is",
+    "suffix": ".",
+    "answer": "respect",
+    "distractors": [
+      "estimation",
+      "release frequency",
+      "tool usage"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A27",
+    "prompt": "When the Sprint Goal is impossible due to a major external change, the Product Owner may",
+    "suffix": ".",
+    "answer": "cancel the Sprint",
+    "distractors": [
+      "extend the Sprint",
+      "change the Scrum Guide",
+      "declare all work Done"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A28",
+    "prompt": "If a Sprint is cancelled, any completed and Done Product Backlog items are",
+    "suffix": ".",
+    "answer": "reviewed",
+    "distractors": [
+      "discarded automatically",
+      "always released",
+      "moved to a new team"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A29",
+    "prompt": "Advanced Scrum practice emphasizes empirical control because complex work cannot be managed reliably through",
+    "suffix": ".",
+    "answer": "prediction alone",
+    "distractors": [
+      "transparency",
+      "inspection",
+      "adaptation"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A30",
+    "prompt": "A team claims it is agile but avoids inspecting poor outcomes. The missing pillar is likely",
+    "suffix": ".",
+    "answer": "inspection",
+    "distractors": [
+      "estimation",
+      "delegation",
+      "standardization"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A31",
+    "prompt": "A team inspects problems but never changes behavior. The missing pillar is likely",
+    "suffix": ".",
+    "answer": "adaptation",
+    "distractors": [
+      "forecasting",
+      "documentation",
+      "assignment"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A32",
+    "prompt": "A team cannot inspect progress because Done is unclear. The missing pillar is likely",
+    "suffix": ".",
+    "answer": "transparency",
+    "distractors": [
+      "velocity",
+      "budgeting",
+      "specialization"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A33",
+    "prompt": "The Product Owner maximizes value best by ordering work according to value, risk, learning, and",
+    "suffix": ".",
+    "answer": "opportunity",
+    "distractors": [
+      "developer preference only",
+      "alphabetical order",
+      "oldest request first"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A34",
+    "prompt": "A Scrum Master helping a Product Owner in a large organization should improve stakeholder collaboration and Product Backlog",
+    "suffix": ".",
+    "answer": "transparency",
+    "distractors": [
+      "secrecy",
+      "handoffs",
+      "task assignment"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A35",
+    "prompt": "A Product Owner who says yes to every stakeholder request should be coached on saying no to protect",
+    "suffix": ".",
+    "answer": "value focus",
+    "distractors": [
+      "velocity",
+      "meeting count",
+      "individual utilization"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A36",
+    "prompt": "A Product Goal should not be so vague that it cannot guide Product Backlog",
+    "suffix": ".",
+    "answer": "ordering",
+    "distractors": [
+      "tool selection",
+      "job grades",
+      "office seating"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A37",
+    "prompt": "A Sprint Goal should not be so broad that almost any work could satisfy",
+    "suffix": ".",
+    "answer": "it",
+    "distractors": [
+      "the Definition of Done",
+      "the Product Owner",
+      "the Scrum Master"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A38",
+    "prompt": "A Scrum Team that has no Sprint Goal is likely operating as a feature factory rather than pursuing a coherent",
+    "suffix": ".",
+    "answer": "objective",
+    "distractors": [
+      "time-box",
+      "event",
+      "artifact"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A39",
+    "prompt": "The Sprint Backlog belongs to the Developers because they are accountable for managing their own",
+    "suffix": ".",
+    "answer": "plan",
+    "distractors": [
+      "budget",
+      "contracts",
+      "stakeholders"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A40",
+    "prompt": "A Scrum Master should respond to hidden undone work by strengthening the Definition of Done and making quality",
+    "suffix": ".",
+    "answer": "transparent",
+    "distractors": [
+      "optional",
+      "external",
+      "deferred"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A41",
+    "prompt": "If the Product Backlog is not ordered, Sprint Planning becomes harder because the team lacks clear",
+    "suffix": ".",
+    "answer": "priorities",
+    "distractors": [
+      "job titles",
+      "meeting rooms",
+      "certifications"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A42",
+    "prompt": "A Scrum Team should not create a hardening Sprint because each Sprint should create a Done",
+    "suffix": ".",
+    "answer": "Increment",
+    "distractors": [
+      "forecast",
+      "backlog",
+      "organization chart"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A43",
+    "prompt": "A release Sprint is usually a symptom that releasability is not built into",
+    "suffix": ".",
+    "answer": "Done",
+    "distractors": [
+      "Sprint Planning",
+      "stakeholder mapping",
+      "Product Goal"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A44",
+    "prompt": "When product discovery reveals a better direction mid-Sprint, the team should protect the Sprint Goal while adapting",
+    "suffix": ".",
+    "answer": "scope",
+    "distractors": [
+      "time-boxes",
+      "Scrum values",
+      "accountabilities"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A45",
+    "prompt": "A Scrum Master facing resistance should use transparency to reveal impact, not force compliance through",
+    "suffix": ".",
+    "answer": "authority",
+    "distractors": [
+      "coaching",
+      "teaching",
+      "facilitation"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A46",
+    "prompt": "Professional Scrum is not about performing events mechanically; it is about enabling empiricism through",
+    "suffix": ".",
+    "answer": "transparency, inspection, and adaptation",
+    "distractors": [
+      "estimation, assignment, and reporting",
+      "planning, budgeting, and control",
+      "roles, titles, and approvals"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A47",
+    "prompt": "If management wants detailed annual scope commitments from Scrum Teams, the Scrum Master should explain the limits of prediction in",
+    "suffix": ".",
+    "answer": "complex work",
+    "distractors": [
+      "simple work",
+      "repetitive production",
+      "known procedures"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A48",
+    "prompt": "A Scrum Team's commitment is not to a fixed scope list; during the Sprint it is to the",
+    "suffix": ".",
+    "answer": "Sprint Goal",
+    "distractors": [
+      "Product Goal",
+      "velocity target",
+      "stakeholder wish list"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A49",
+    "prompt": "The Product Goal creates coherence across Sprints by giving the Scrum Team a longer-term",
+    "suffix": ".",
+    "answer": "target",
+    "distractors": [
+      "timesheet",
+      "task owner",
+      "manager"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A50",
+    "prompt": "When a Product Owner changes the Product Goal frequently without evidence, the Scrum Master should coach empirical decision-making based on",
+    "suffix": ".",
+    "answer": "learning and value",
+    "distractors": [
+      "seniority",
+      "politics",
+      "habit"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A51",
+    "prompt": "A Scrum Master helping Developers with quality should coach them to make technical excellence part of",
+    "suffix": ".",
+    "answer": "Done",
+    "distractors": [
+      "the stakeholder list",
+      "the project charter",
+      "the meeting calendar"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A52",
+    "prompt": "If a Scrum Team depends on another department to finish every Increment, it may not be sufficiently",
+    "suffix": ".",
+    "answer": "cross-functional",
+    "distractors": [
+      "visible",
+      "small",
+      "time-boxed"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A53",
+    "prompt": "The best evidence that Scrum is working is not more meetings, but more frequent delivery of valuable",
+    "suffix": ".",
+    "answer": "Increments",
+    "distractors": [
+      "estimates",
+      "reports",
+      "assignments"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A54",
+    "prompt": "A team that calls the Daily Scrum a stand-up status meeting may be missing its purpose as an inspect-and-adapt event for",
+    "suffix": ".",
+    "answer": "Developers",
+    "distractors": [
+      "stakeholders",
+      "line managers",
+      "auditors"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A55",
+    "prompt": "A Sprint Review should include discussion of what changed in the environment because the Product Backlog may need",
+    "suffix": ".",
+    "answer": "adaptation",
+    "distractors": [
+      "freezing",
+      "handoff",
+      "approval"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A56",
+    "prompt": "A Sprint Retrospective should inspect the team's effectiveness and plan improvements that can be acted on",
+    "suffix": ".",
+    "answer": "soon",
+    "distractors": [
+      "after the project",
+      "only annually",
+      "only by management"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A57",
+    "prompt": "A Scrum Master should help the organization understand that Scrum exposes problems that were already",
+    "suffix": ".",
+    "answer": "there",
+    "distractors": [
+      "created by the Scrum Master",
+      "caused by events",
+      "caused by certification"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A58",
+    "prompt": "If stakeholders bypass the Product Owner to insert work directly into the Sprint, the Scrum Master should help restore",
+    "suffix": ".",
+    "answer": "accountability",
+    "distractors": [
+      "secrecy",
+      "individual utilization",
+      "task estimates"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A59",
+    "prompt": "If Developers hide unfinished work to look successful, the Scrum values of openness and courage are",
+    "suffix": ".",
+    "answer": "weak",
+    "distractors": [
+      "irrelevant",
+      "complete",
+      "automated"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A60",
+    "prompt": "When a Scrum Team cannot meet its Definition of Done, it should not lower quality silently; it should inspect and adapt",
+    "suffix": ".",
+    "answer": "transparently",
+    "distractors": [
+      "privately only",
+      "after release only",
+      "without stakeholders"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A61",
+    "prompt": "A mature Scrum Team uses the Sprint Goal to make trade-off decisions during",
+    "suffix": ".",
+    "answer": "the Sprint",
+    "distractors": [
+      "the hiring process",
+      "the annual review",
+      "the contract negotiation"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A62",
+    "prompt": "A weak Product Owner function often results in a Product Backlog ordered by urgency rather than",
+    "suffix": ".",
+    "answer": "value",
+    "distractors": [
+      "visibility",
+      "meetings",
+      "team size"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A63",
+    "prompt": "A Scrum Master should coach leaders not to compare teams by velocity because context makes velocity",
+    "suffix": ".",
+    "answer": "non-comparable",
+    "distractors": [
+      "unnecessary to inspect",
+      "the only value metric",
+      "a Scrum artifact"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A64",
+    "prompt": "When teams optimize for utilization, they may harm flow, collaboration, and",
+    "suffix": ".",
+    "answer": "value delivery",
+    "distractors": [
+      "office attendance",
+      "tool usage",
+      "job titles"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A65",
+    "prompt": "A Scrum Team should not split work by component teams if that prevents delivering integrated",
+    "suffix": ".",
+    "answer": "value",
+    "distractors": [
+      "documentation",
+      "estimation",
+      "assignment"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A66",
+    "prompt": "Feature teams are generally preferable in Scrum scaling because they can deliver end-to-end",
+    "suffix": ".",
+    "answer": "Increments",
+    "distractors": [
+      "component reports",
+      "technical documents",
+      "approval tickets"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A67",
+    "prompt": "In Nexus, the Nexus Integration Team is accountable for ensuring an Integrated Increment is produced at least every",
+    "suffix": ".",
+    "answer": "Sprint",
+    "distractors": [
+      "quarter",
+      "release train",
+      "year"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A68",
+    "prompt": "Nexus builds on Scrum to scale multiple Scrum Teams working on one",
+    "suffix": ".",
+    "answer": "product",
+    "distractors": [
+      "department",
+      "portfolio",
+      "contract"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A69",
+    "prompt": "The Nexus Sprint Backlog makes visible dependencies and the flow of work across",
+    "suffix": ".",
+    "answer": "teams",
+    "distractors": [
+      "budgets",
+      "managers",
+      "vendors only"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A70",
+    "prompt": "In scaled Scrum, integration work should not be postponed to the end because it hides",
+    "suffix": ".",
+    "answer": "risk",
+    "distractors": [
+      "velocity",
+      "team names",
+      "meeting costs"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A71",
+    "prompt": "A Product Owner cannot maximize value well without engaging stakeholders and understanding",
+    "suffix": ".",
+    "answer": "market needs",
+    "distractors": [
+      "individual utilization",
+      "meeting rules",
+      "office politics"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A72",
+    "prompt": "A Scrum Master should help create conditions for empiricism rather than own all Scrum",
+    "suffix": ".",
+    "answer": "decisions",
+    "distractors": [
+      "values",
+      "events",
+      "outcomes"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A73",
+    "prompt": "A team that delivers exactly the planned scope but misses the product outcome should inspect its assumptions about",
+    "suffix": ".",
+    "answer": "value",
+    "distractors": [
+      "time-boxes",
+      "events",
+      "team size"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A74",
+    "prompt": "Evidence-Based Management complements Scrum by helping inspect goals through evidence of",
+    "suffix": ".",
+    "answer": "value and capability",
+    "distractors": [
+      "job titles",
+      "meeting attendance",
+      "individual utilization"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A75",
+    "prompt": "Current Value is concerned with the value currently delivered to customers and",
+    "suffix": ".",
+    "answer": "users",
+    "distractors": [
+      "developers only",
+      "vendors only",
+      "auditors only"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A76",
+    "prompt": "Unrealized Value helps explore potential future value that could be captured by",
+    "suffix": ".",
+    "answer": "the product",
+    "distractors": [
+      "the timesheet",
+      "the org chart",
+      "the Daily Scrum"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A77",
+    "prompt": "Time to Market helps understand the organization's ability to deliver value",
+    "suffix": ".",
+    "answer": "quickly",
+    "distractors": [
+      "secretly",
+      "hierarchically",
+      "without feedback"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A78",
+    "prompt": "Ability to Innovate helps understand how effectively the organization can deliver new",
+    "suffix": ".",
+    "answer": "capabilities",
+    "distractors": [
+      "job titles",
+      "approvals",
+      "committees"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A79",
+    "prompt": "A Scrum Team should use metrics as conversation starters, not as substitutes for",
+    "suffix": ".",
+    "answer": "judgment",
+    "distractors": [
+      "reports",
+      "charts",
+      "evidence"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A80",
+    "prompt": "If a metric causes gaming, the Scrum Master should help inspect the metric's effect on",
+    "suffix": ".",
+    "answer": "behavior",
+    "distractors": [
+      "certification",
+      "tooling only",
+      "office design"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A81",
+    "prompt": "When leaders ask for certainty in a complex product environment, the Scrum response should be transparency about uncertainty and frequent",
+    "suffix": ".",
+    "answer": "inspection",
+    "distractors": [
+      "promises",
+      "fixed scope",
+      "late feedback"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A82",
+    "prompt": "A Scrum Master should not protect the team from all stakeholder contact because Developers need understanding of",
+    "suffix": ".",
+    "answer": "value and feedback",
+    "distractors": [
+      "salary data",
+      "legal contracts",
+      "private politics"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A83",
+    "prompt": "A Product Owner should order riskier learning earlier when uncertainty threatens the Product",
+    "suffix": ".",
+    "answer": "Goal",
+    "distractors": [
+      "Daily Scrum",
+      "team name",
+      "timebox"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A84",
+    "prompt": "If a Sprint Goal is repeatedly missed, the Scrum Team should inspect forecasting, slicing, interruptions, dependencies, and",
+    "suffix": ".",
+    "answer": "collaboration",
+    "distractors": [
+      "office seating",
+      "brand colors",
+      "annual holidays"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A85",
+    "prompt": "If every Sprint Goal is easily met without learning, the team may not be pursuing meaningful",
+    "suffix": ".",
+    "answer": "outcomes",
+    "distractors": [
+      "meetings",
+      "roles",
+      "timeboxes"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A86",
+    "prompt": "A Scrum Master should help the team distinguish being busy from producing",
+    "suffix": ".",
+    "answer": "value",
+    "distractors": [
+      "estimates",
+      "charts",
+      "documents"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A87",
+    "prompt": "The Scrum Team should make a Product Backlog item smaller when its size prevents finishing it to",
+    "suffix": ".",
+    "answer": "Done",
+    "distractors": [
+      "estimated",
+      "assigned",
+      "approved"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A88",
+    "prompt": "A Product Owner who orders all technical debt last may be ignoring its impact on future",
+    "suffix": ".",
+    "answer": "value delivery",
+    "distractors": [
+      "meeting attendance",
+      "office culture",
+      "certificates"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A89",
+    "prompt": "Technical debt is not best handled by hiding it; it should be made transparent in relation to",
+    "suffix": ".",
+    "answer": "product value",
+    "distractors": [
+      "developer comfort only",
+      "team seniority",
+      "stakeholder titles"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A90",
+    "prompt": "A Scrum Master should coach from Scrum's principles before adding practices because practices are",
+    "suffix": ".",
+    "answer": "context-sensitive",
+    "distractors": [
+      "mandatory",
+      "immutable",
+      "always universal"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A91",
+    "prompt": "A team using Kanban practices inside Scrum should ensure those practices do not replace Scrum's required",
+    "suffix": ".",
+    "answer": "accountabilities, events, artifacts, and commitments",
+    "distractors": [
+      "tools and templates",
+      "reports and dashboards",
+      "budgets and contracts"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A92",
+    "prompt": "When Scrum is adapted to avoid discomfort, the organization may be removing the very transparency needed for",
+    "suffix": ".",
+    "answer": "change",
+    "distractors": [
+      "certification",
+      "estimation",
+      "headcount"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A93",
+    "prompt": "A Scrum Master should prefer experiments over large transformations when learning is uncertain because Scrum supports incremental",
+    "suffix": ".",
+    "answer": "adaptation",
+    "distractors": [
+      "reorganization only",
+      "prediction only",
+      "approval only"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A94",
+    "prompt": "A useful improvement from a Retrospective should be small enough to try and important enough to",
+    "suffix": ".",
+    "answer": "matter",
+    "distractors": [
+      "document forever",
+      "delay indefinitely",
+      "assign to outsiders only"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A95",
+    "prompt": "If a Scrum Team cannot say what it learned in a Sprint, the Sprint may have lacked meaningful",
+    "suffix": ".",
+    "answer": "inspection",
+    "distractors": [
+      "estimation",
+      "naming",
+      "tooling"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A96",
+    "prompt": "When Product Backlog items are selected without a Sprint Goal, the Sprint Backlog may lack",
+    "suffix": ".",
+    "answer": "coherence",
+    "distractors": [
+      "visibility",
+      "ownership",
+      "time-boxing"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A97",
+    "prompt": "A Scrum Master should help the Product Owner shift from managing requirements to maximizing",
+    "suffix": ".",
+    "answer": "value",
+    "distractors": [
+      "velocity",
+      "headcount",
+      "status"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A98",
+    "prompt": "The most professional response to pressure for fake progress is to increase",
+    "suffix": ".",
+    "answer": "transparency",
+    "distractors": [
+      "concealment",
+      "estimates",
+      "ceremony"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A99",
+    "prompt": "Professional Scrum requires courage because transparency often reveals uncomfortable",
+    "suffix": ".",
+    "answer": "truths",
+    "distractors": [
+      "templates",
+      "job titles",
+      "tools"
+    ],
+    "level": "advanced"
+  },
+  {
+    "id": "A100",
+    "prompt": "The advanced Scrum practitioner's core move is to use Scrum to reveal reality, then help people inspect and",
+    "suffix": ".",
+    "answer": "adapt",
+    "distractors": [
+      "comply",
+      "predict",
+      "hide"
+    ],
+    "level": "advanced"
+  }
+]
