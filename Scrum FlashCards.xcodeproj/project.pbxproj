@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		708741CE2FD42E5100A6129D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 708741CD2FD42E5100A6129D /* FirebaseAnalytics */; };
+		708741D02FD42E5100A6129D /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 708741CF2FD42E5100A6129D /* FirebaseAnalyticsCore */; };
+		708741D22FD42E5100A6129D /* FirebaseAnalyticsIdentitySupport in Frameworks */ = {isa = PBXBuildFile; productRef = 708741D12FD42E5100A6129D /* FirebaseAnalyticsIdentitySupport */; };
+		708741D52FD4320200A6129D /* TelemetryClient in Frameworks */ = {isa = PBXBuildFile; productRef = 708741D42FD4320200A6129D /* TelemetryClient */; };
+		708741D72FD4320200A6129D /* TelemetryDeck in Frameworks */ = {isa = PBXBuildFile; productRef = 708741D62FD4320200A6129D /* TelemetryDeck */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		70CEA2342FD0A57E0092E25F /* Scrum FlashCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scrum FlashCards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +31,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				708741CE2FD42E5100A6129D /* FirebaseAnalytics in Frameworks */,
+				708741D52FD4320200A6129D /* TelemetryClient in Frameworks */,
+				708741D02FD42E5100A6129D /* FirebaseAnalyticsCore in Frameworks */,
+				708741D72FD4320200A6129D /* TelemetryDeck in Frameworks */,
+				708741D22FD42E5100A6129D /* FirebaseAnalyticsIdentitySupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,11 @@
 			);
 			name = "Scrum FlashCards";
 			packageProductDependencies = (
+				708741CD2FD42E5100A6129D /* FirebaseAnalytics */,
+				708741CF2FD42E5100A6129D /* FirebaseAnalyticsCore */,
+				708741D12FD42E5100A6129D /* FirebaseAnalyticsIdentitySupport */,
+				708741D42FD4320200A6129D /* TelemetryClient */,
+				708741D62FD4320200A6129D /* TelemetryDeck */,
 			);
 			productName = "Scrum FlashCards";
 			productReference = 70CEA2342FD0A57E0092E25F /* Scrum FlashCards.app */;
@@ -94,6 +112,10 @@
 			);
 			mainGroup = 70CEA22B2FD0A57E0092E25F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				708741CC2FD42E5100A6129D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				708741D32FD4320200A6129D /* XCRemoteSwiftPackageReference "SwiftSDK" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 70CEA2352FD0A57E0092E25F /* Products */;
 			projectDirPath = "";
@@ -330,6 +352,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		708741CC2FD42E5100A6129D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.14.0;
+			};
+		};
+		708741D32FD4320200A6129D /* XCRemoteSwiftPackageReference "SwiftSDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TelemetryDeck/SwiftSDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.14.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		708741CD2FD42E5100A6129D /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 708741CC2FD42E5100A6129D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		708741CF2FD42E5100A6129D /* FirebaseAnalyticsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 708741CC2FD42E5100A6129D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsCore;
+		};
+		708741D12FD42E5100A6129D /* FirebaseAnalyticsIdentitySupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 708741CC2FD42E5100A6129D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsIdentitySupport;
+		};
+		708741D42FD4320200A6129D /* TelemetryClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 708741D32FD4320200A6129D /* XCRemoteSwiftPackageReference "SwiftSDK" */;
+			productName = TelemetryClient;
+		};
+		708741D62FD4320200A6129D /* TelemetryDeck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 708741D32FD4320200A6129D /* XCRemoteSwiftPackageReference "SwiftSDK" */;
+			productName = TelemetryDeck;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 70CEA22C2FD0A57E0092E25F /* Project object */;
 }

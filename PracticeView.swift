@@ -15,8 +15,11 @@ struct PracticeView: View {
     @State private var cards: [Flashcard] = []
     @State private var index = 0
     @State private var correctCount = 0
+    @State private var incorrectCount = 0
     @State private var showCompletion = false
     @State private var didLoad = false
+    @State private var startTime = Date()
+    @State private var cardStartTime = Date()
 
     var body: some View {
         ZStack {
@@ -24,10 +27,14 @@ struct PracticeView: View {
 
             VStack(spacing: 0) {
                 if !cards.isEmpty && index < cards.count {
+                    let isMastered = ProgressStore(context: context).cardProgress(for: cards[index].id).isMastered
                     FlashcardView(
                         card: cards[index],
                         index: index,
                         total: cards.count,
+                        correctCount: correctCount,
+                        incorrectCount: incorrectCount,
+                        isMastered: isMastered,
                         onAnswer: handleAnswer,
                         onNext: advance
                     )
@@ -37,7 +44,7 @@ struct PracticeView: View {
                         removal: .move(edge: .leading).combined(with: .opacity)
                     ))
                 }
-                Spacer(minLength: 0)
+                Spacer(minLength: 40)
             }
             .animation(.spring(response: 0.45, dampingFraction: 0.85), value: index)
         }
@@ -52,6 +59,7 @@ struct PracticeView: View {
             }
         }
         .onAppear(perform: loadOnce)
+        .onDisappear(perform: handleExit)
         .sheet(isPresented: $showCompletion) {
             CompletionSheet(
                 level: level,
@@ -81,8 +89,12 @@ struct PracticeView: View {
     private func loadOnce() {
         guard !didLoad else { return }
         didLoad = true
+        startTime = Date()
+        cardStartTime = Date()
         let store = ProgressStore(context: context)
         let lp = store.levelProgress(for: level)
+
+        TelemetryManager.shared.trackSessionStart(level: level.rawValue)
 
         if lp.hasInProgressAttempt,
            let resumed = resumeDeck(from: lp.inProgressCardIDs),
@@ -91,8 +103,8 @@ struct PracticeView: View {
             cards = resumed
             index = lp.inProgressIndex
             correctCount = lp.inProgressCorrectCount
+            incorrectCount = index - correctCount
             if index >= cards.count {
-                // Saved attempt was effectively complete — finalize cleanly.
                 finalize(store: store)
             }
         } else {
@@ -100,8 +112,6 @@ struct PracticeView: View {
         }
     }
 
-    /// Rebuild the deck from saved IDs. If any card has been removed (or moved out of
-    /// this level) since the attempt was saved, returns nil so we restart cleanly.
     private func resumeDeck(from ids: [String]) -> [Flashcard]? {
         let byID = Dictionary(uniqueKeysWithValues: Flashcard.cards(in: level).map { ($0.id, $0) })
         let resolved = ids.compactMap { byID[$0] }
@@ -110,26 +120,53 @@ struct PracticeView: View {
     }
 
     private func startFreshAttempt(store: ProgressStore) {
-        let deck = Flashcard.cards(in: level).shuffled()
+        let allCards = Flashcard.cards(in: level)
+        let lp = store.levelProgress(for: level)
+        
+        let windowSize = 50
+        let rotationStep = 25
+        let startIndex = (lp.attemptsCount * rotationStep) % max(1, allCards.count)
+        
+        var selectedCards: [Flashcard] = []
+        for i in 0..<windowSize {
+            let index = (startIndex + i) % max(1, allCards.count)
+            selectedCards.append(allCards[index])
+        }
+        
+        let deck = selectedCards.shuffled()
         cards = deck
         index = 0
         correctCount = 0
-        let lp = store.levelProgress(for: level)
+        incorrectCount = 0
         lp.startAttempt(cardIDs: deck.map(\.id))
     }
 
     // MARK: - Actions
 
     private func handleAnswer(_ correct: Bool) {
+        let cardTime = Date().timeIntervalSince(cardStartTime)
         let store = ProgressStore(context: context)
         store.recordAnswer(card: cards[index], correct: correct)
-        if correct { correctCount += 1 }
-        // Persist running tally; the index updates on advance().
+        
+        // Intelligent Metric: Track card failure/success for difficulty heatmap
+        TelemetryManager.shared.trackCardAnswer(
+            cardID: cards[index].id,
+            level: level.rawValue,
+            isCorrect: correct,
+            timeTaken: cardTime
+        )
+        
+        if correct {
+            correctCount += 1
+        } else {
+            incorrectCount += 1
+        }
         let lp = store.levelProgress(for: level)
         lp.inProgressCorrectCount = correctCount
     }
 
     private func advance() {
+        cardStartTime = Date() // Reset for next card
         let store = ProgressStore(context: context)
         let lp = store.levelProgress(for: level)
         if index + 1 < cards.count {
@@ -141,15 +178,55 @@ struct PracticeView: View {
     }
 
     private func finalize(store: ProgressStore) {
-        // recordAttempt also clears the in-progress state.
+        let elapsed = Date().timeIntervalSince(startTime)
+        recordProgress()
         store.finishLevelAttempt(level: level, correct: correctCount, total: cards.count)
+        
+        // Intelligent Metric: Track session completion
+        TelemetryManager.shared.trackSessionEnd(
+            level: level.rawValue,
+            duration: elapsed,
+            correct: correctCount,
+            total: cards.count,
+            finished: true
+        )
+        
         showCompletion = true
+    }
+
+    private func handleExit() {
+        let elapsed = Date().timeIntervalSince(startTime)
+        if index < cards.count && !showCompletion {
+            // Intelligent Metric: Track abandonment/churn
+            TelemetryManager.shared.trackSessionEnd(
+                level: level.rawValue,
+                duration: elapsed,
+                correct: correctCount,
+                total: cards.count,
+                finished: false
+            )
+        }
+        recordProgress()
+    }
+
+    private func recordProgress() {
+        let elapsed = Date().timeIntervalSince(startTime)
+        guard elapsed > 1 else { return } // Avoid micro-sessions
+        
+        let store = ProgressStore(context: context)
+        store.addPracticeTime(elapsed)
+        
+        // Reset startTime so if they continue/restart, we don't double-count
+        startTime = Date()
     }
 
     private func restart() {
         showCompletion = false
+        startTime = Date()
+        cardStartTime = Date()
         let store = ProgressStore(context: context)
         startFreshAttempt(store: store)
+        TelemetryManager.shared.trackSessionStart(level: level.rawValue)
     }
 }
 

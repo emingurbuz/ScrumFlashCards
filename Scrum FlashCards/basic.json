@@ -18,7 +18,7 @@
     "answer": "one month",
     "distractors": [
       "one week",
-      "two months",
+      "four weeks",
       "three months"
     ],
     "level": "basic"
@@ -31,13 +31,13 @@
     "distractors": [
       "Sprint Review",
       "Sprint Planning",
-      "Retrospective"
+      "Sprint Retrospective"
     ],
     "level": "basic"
   },
   {
     "id": "B04",
-    "prompt": "The artifact that represents an ordered list of what is needed to improve the product is the",
+    "prompt": "The artifact that represents an ordered list of what is needed to create value for the product is the",
     "suffix": ".",
     "answer": "Product Backlog",
     "distractors": [
@@ -61,7 +61,7 @@
   },
   {
     "id": "B06",
-    "prompt": "The three pillars of empiricism in Scrum are transparency, inspection, and",
+    "prompt": "The three pillars of empiricism are transparency, inspection, and",
     "suffix": ".",
     "answer": "adaptation",
     "distractors": [
@@ -75,7 +75,7 @@
     "id": "B07",
     "prompt": "Each Sprint begins with",
     "suffix": ".",
-    "answer": "Sprint Planning",
+    "answer": "the Sprint Planning",
     "distractors": [
       "the Daily Scrum",
       "the Sprint Review",
@@ -99,11 +99,11 @@
     "id": "B09",
     "prompt": "Empiricism asserts that knowledge comes from experience and making decisions based on what is",
     "suffix": ".",
-    "answer": "observed",
+    "answer": "known",
     "distractors": [
       "predicted",
       "approved",
-      "documented"
+      "expected"
     ],
     "level": "basic"
   },
@@ -139,13 +139,13 @@
     "distractors": [
       "governance boards",
       "stakeholders",
-      "interfaces"
+      "customers"
     ],
     "level": "basic"
   },
   {
     "id": "B13",
-    "prompt": "The Scrum Team is cross-functional, meaning members have all the skills necessary to create value each",
+    "prompt": "The Scrum Team is cross-functional, meaning members have all the skills necessary to create a Done Increment each",
     "suffix": ".",
     "answer": "Sprint",
     "distractors": [
@@ -157,9 +157,9 @@
   },
   {
     "id": "B14",
-    "prompt": "The Scrum Team is self-managing, meaning it internally decides who does what, when, and",
+    "prompt": "The Scrum Team is self-managing, meaning it internally decides",
     "suffix": ".",
-    "answer": "how",
+    "answer": "who does what, when, and how",
     "distractors": [
       "how much budget is approved",
       "which stakeholders may attend",
@@ -169,11 +169,11 @@
   },
   {
     "id": "B15",
-    "prompt": "The Scrum Team is accountable for creating a valuable, useful",
+    "prompt": "The Scrum Team is accountable for creating a Done, useful",
     "suffix": ".",
     "answer": "Increment",
     "distractors": [
-      "business case",
+      "project plan",
       "project charter",
       "status report"
     ],
@@ -198,7 +198,7 @@
     "answer": "committee",
     "distractors": [
       "customer",
-      "developer",
+      "CEO",
       "stakeholder"
     ],
     "level": "basic"
@@ -209,33 +209,33 @@
     "suffix": ".",
     "answer": "accountable",
     "distractors": [
-      "optional",
-      "anonymous",
+      "responsible",
+      "unbiased",
       "external"
     ],
     "level": "basic"
   },
   {
     "id": "B19",
-    "prompt": "Developers are the people in the Scrum Team committed to creating any aspect of a usable",
+    "prompt": "Developers are the people in the Scrum Team accountable for creating a Done",
     "suffix": ".",
     "answer": "Increment",
     "distractors": [
       "roadmap",
-      "contract",
-      "org chart"
+      "product plan",
+      "requirement list"
     ],
     "level": "basic"
   },
   {
     "id": "B20",
-    "prompt": "Developers are always accountable for creating a plan for the Sprint, the",
+    "prompt": "Developers are always accountable for creating a plan for the Sprint, called the",
     "suffix": ".",
     "answer": "Sprint Backlog",
     "distractors": [
       "Product Backlog",
-      "release plan",
-      "budget forecast"
+      "Release Plan",
+      "Budget Forecast"
     ],
     "level": "basic"
   },

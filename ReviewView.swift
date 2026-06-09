@@ -12,6 +12,8 @@ struct ReviewView: View {
 
     @State private var cards: [Flashcard] = []
     @State private var index = 0
+    @State private var correctCount = 0
+    @State private var incorrectCount = 0
     @State private var didLoad = false
 
     var body: some View {
@@ -23,10 +25,14 @@ struct ReviewView: View {
             } else if cards.isEmpty {
                 emptyState
             } else if index < cards.count {
+                let isMastered = ProgressStore(context: context).cardProgress(for: cards[index].id).isMastered
                 FlashcardView(
                     card: cards[index],
                     index: index,
                     total: cards.count,
+                    correctCount: correctCount,
+                    incorrectCount: incorrectCount,
+                    isMastered: isMastered,
                     onAnswer: handleAnswer,
                     onNext: advance
                 )
@@ -122,6 +128,11 @@ struct ReviewView: View {
     private func handleAnswer(_ correct: Bool) {
         let store = ProgressStore(context: context)
         store.recordAnswer(card: cards[index], correct: correct)
+        if correct {
+            correctCount += 1
+        } else {
+            incorrectCount += 1
+        }
     }
 
     private func advance() {

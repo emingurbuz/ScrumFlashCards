@@ -4,11 +4,15 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct FlashcardView: View {
     let card: Flashcard
     let index: Int
     let total: Int
+    let correctCount: Int
+    let incorrectCount: Int
+    let isMastered: Bool
     var onAnswer: ((Bool) -> Void)? = nil
     let onNext: () -> Void
 
@@ -17,14 +21,15 @@ struct FlashcardView: View {
     private var isLast: Bool { index + 1 == total }
 
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 24) {
             progress
             cardFace
             optionsGrid
             nextButton
+            Spacer(minLength: 0)
         }
         .padding(.horizontal, 20)
-        .padding(.vertical, 24)
+        .padding(.vertical, 12)
         .animation(.spring(response: 0.4, dampingFraction: 0.8), value: selected)
     }
 
@@ -32,14 +37,30 @@ struct FlashcardView: View {
 
     private var progress: some View {
         VStack(alignment: .leading, spacing: 8) {
-            HStack {
-                Text("Card \(index + 1) of \(total)")
-                    .font(.caption.weight(.semibold))
-                    .foregroundStyle(.white.opacity(0.9))
+            HStack(alignment: .bottom) {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("Card \(index + 1) of \(total)")
+                        .font(.caption.weight(.semibold))
+                        .foregroundStyle(.white.opacity(0.9))
+                    
+                    HStack(spacing: 12) {
+                        Label("\(correctCount)", systemImage: "checkmark.circle.fill")
+                            .foregroundStyle(.green)
+                        Label("\(incorrectCount)", systemImage: "xmark.circle.fill")
+                            .foregroundStyle(.red)
+                    }
+                    .font(.caption2.weight(.bold))
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 4)
+                    .background(Capsule().fill(.white.opacity(0.15)))
+                }
+                
                 Spacer()
-                Label("Scrum", systemImage: "sparkles")
+                
+                Label("Scrum", systemImage: isMastered ? "checkmark.seal.fill" : "sparkles")
                     .font(.caption.weight(.semibold))
-                    .foregroundStyle(.white.opacity(0.9))
+                    .foregroundStyle(isMastered ? .yellow : .white.opacity(0.9))
+                    .help(isMastered ? "Mastered" : "")
             }
             GeometryReader { geo in
                 ZStack(alignment: .leading) {
@@ -93,15 +114,12 @@ struct FlashcardView: View {
     }
 
     private var sentence: Text {
-        let blank = Text(blankText)
-            .underline()
-            .foregroundColor(blankColor)
-            .fontWeight(.bold)
-
-        if card.suffix.isEmpty {
-            return Text("\(card.prompt) \(blank)")
-        }
-        return Text("\(card.prompt) \(blank) \(card.suffix)")
+        let suffix = card.suffix.isEmpty ? "" : " \(card.suffix)"
+        let masteredIcon = Text(" \(Image(systemName: "checkmark.seal.fill"))")
+            .baselineOffset(-1)
+            .foregroundColor(.yellow)
+        
+        return Text("\(card.prompt) \(Text(blankText).underline().foregroundColor(blankColor).fontWeight(.bold))\(suffix)\(isMastered ? masteredIcon : Text(""))")
     }
 
     private var blankText: String {
@@ -256,7 +274,14 @@ private struct StatefulPreview: View {
     private let cards = Flashcard.cards(in: .basic)
 
     var body: some View {
-        FlashcardView(card: cards[index], index: index, total: cards.count) {
+        FlashcardView(
+            card: cards[index],
+            index: index,
+            total: cards.count,
+            correctCount: 0,
+            incorrectCount: 0,
+            isMastered: false
+        ) {
             index = (index + 1) % cards.count
         }
         .id(cards[index].id)

@@ -26,7 +26,14 @@ struct ProgressStore {
     @discardableResult
     func recordAnswer(card: Flashcard, correct: Bool) -> CardProgress {
         let progress = cardProgress(for: card.id)
+        let wasMastered = progress.isMastered
         progress.record(correct: correct)
+        
+        // Intelligent Metric: Mastery track
+        if !wasMastered && progress.isMastered {
+            TelemetryManager.shared.trackMasteryAchieved(cardID: card.id)
+        }
+        
         return progress
     }
 
@@ -54,7 +61,10 @@ struct ProgressStore {
         let pct = Double(correct) / Double(total)
         if pct >= level.passingPercentage, let next = level.next {
             let nextLp = levelProgress(for: next)
-            nextLp.isUnlocked = true
+            if !nextLp.isUnlocked {
+                nextLp.isUnlocked = true
+                TelemetryManager.shared.send(signalName: "level_unlocked", metadata: ["level": next.rawValue])
+            }
         }
     }
 
@@ -62,6 +72,7 @@ struct ProgressStore {
         for level in Level.allCases {
             _ = levelProgress(for: level)
         }
+        _ = globalStats()
     }
 
     /// Wipes all per-card and per-level progress, then re-seeds defaults
@@ -69,7 +80,10 @@ struct ProgressStore {
     func resetAllProgress() {
         try? context.delete(model: CardProgress.self)
         try? context.delete(model: LevelProgress.self)
+        let stats = globalStats()
+        stats.totalResetsCount += 1
         ensureAllLevelProgressExists()
+        TelemetryManager.shared.trackLevelReset(level: "all")
     }
 
     /// Resets a single level: clears its attempt history and any in-progress run,
@@ -89,6 +103,10 @@ struct ProgressStore {
                 context.delete(cp)
             }
         }
+        
+        let stats = globalStats()
+        stats.totalResetsCount += 1
+        TelemetryManager.shared.trackLevelReset(level: level.rawValue)
     }
 
     // MARK: - Review
@@ -103,5 +121,30 @@ struct ProgressStore {
             ]
         )
         return (try? context.fetch(fd))?.map(\.cardID) ?? []
+    }
+
+    // MARK: - Global Stats
+
+    func globalStats() -> GlobalStats {
+        var fd = FetchDescriptor<GlobalStats>()
+        fd.fetchLimit = 1
+        if let existing = (try? context.fetch(fd))?.first {
+            return existing
+        }
+        let new = GlobalStats()
+        context.insert(new)
+        return new
+    }
+
+    func recordAppOpen() {
+        let stats = globalStats()
+        stats.totalSessionsCount += 1
+        stats.lastOpenedDate = .now
+        TelemetryManager.shared.send(signalName: "app_open")
+    }
+
+    func addPracticeTime(_ seconds: Double) {
+        let stats = globalStats()
+        stats.totalSecondsPracticed += seconds
     }
 }

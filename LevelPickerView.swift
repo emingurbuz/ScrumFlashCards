@@ -19,6 +19,7 @@ struct LevelPickerView: View {
     @State private var path: [Route] = []
     @State private var showResetAllConfirm = false
     @State private var levelToReset: Level?
+    @State private var showStats = false
 
     var body: some View {
         NavigationStack(path: $path) {
@@ -82,6 +83,9 @@ struct LevelPickerView: View {
             } message: {
                 Text("Your attempts, in-progress run, and per-card history for this level will be erased. Other levels stay as they are.")
             }
+            .sheet(isPresented: $showStats) {
+                StatsView()
+            }
             .onAppear {
                 ProgressStore(context: context).ensureAllLevelProgressExists()
             }
@@ -100,20 +104,34 @@ struct LevelPickerView: View {
     }
 
     private var settingsMenu: some View {
-        Menu {
-            Button(role: .destructive) {
-                showResetAllConfirm = true
+        HStack(spacing: 12) {
+            Button {
+                showStats = true
             } label: {
-                Label("Reset All Progress", systemImage: "arrow.counterclockwise")
+                Image(systemName: "chart.bar.fill")
+                    .font(.title3.weight(.semibold))
+                    .foregroundStyle(.white)
+                    .padding(10)
+                    .background(Circle().fill(.white.opacity(0.18)))
+                    .overlay(Circle().strokeBorder(.white.opacity(0.25), lineWidth: 1))
+                    .shadow(color: .black.opacity(0.15), radius: 6, y: 3)
             }
-        } label: {
-            Image(systemName: "gearshape.fill")
-                .font(.title3.weight(.semibold))
-                .foregroundStyle(.white)
-                .padding(10)
-                .background(Circle().fill(.white.opacity(0.18)))
-                .overlay(Circle().strokeBorder(.white.opacity(0.25), lineWidth: 1))
-                .shadow(color: .black.opacity(0.15), radius: 6, y: 3)
+
+            Menu {
+                Button(role: .destructive) {
+                    showResetAllConfirm = true
+                } label: {
+                    Label("Reset All Progress", systemImage: "arrow.counterclockwise")
+                }
+            } label: {
+                Image(systemName: "gearshape.fill")
+                    .font(.title3.weight(.semibold))
+                    .foregroundStyle(.white)
+                    .padding(10)
+                    .background(Circle().fill(.white.opacity(0.18)))
+                    .overlay(Circle().strokeBorder(.white.opacity(0.25), lineWidth: 1))
+                    .shadow(color: .black.opacity(0.15), radius: 6, y: 3)
+            }
         }
         .padding(.trailing, 18)
         .padding(.top, 8)
