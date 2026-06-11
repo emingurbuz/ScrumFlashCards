@@ -52,7 +52,7 @@ struct StatsView: View {
                 StatCard(title: "Practice Time", value: formatTime(stats?.totalSecondsPracticed ?? 0), icon: "clock.fill", color: .blue)
                 StatCard(title: "Sessions", value: "\(stats?.totalSessionsCount ?? 0)", icon: "play.circle.fill", color: .green)
                 StatCard(title: "Total Resets", value: "\(stats?.totalResetsCount ?? 0)", icon: "arrow.counterclockwise.circle.fill", color: .orange)
-                StatCard(title: "Cards Seen", value: "\(cardProgress.count) / \(Flashcard.all.count)", icon: "rectangle.stack.fill", color: .purple)
+                StatCard(title: "Cards Seen", value: "\(cardProgress.count) / \(Flashcard.all.count)", icon: "rectangle.stack.fill", color: Color(red: 0.00, green: 0.59, blue: 0.65))
             }
         }
     }
@@ -114,11 +114,11 @@ struct StatsView: View {
                     Spacer()
                     Text("\(Int(masteryPct * 100))%")
                         .font(.title2.bold())
-                        .foregroundStyle(.purple)
+                        .foregroundStyle(Color(red: 0.00, green: 0.59, blue: 0.65))
                 }
                 
                 ProgressView(value: masteryPct)
-                    .tint(.purple)
+                    .tint(Color(red: 0.00, green: 0.59, blue: 0.65))
             }
             .padding()
             .background(Color(.secondarySystemGroupedBackground))

@@ -38,9 +38,8 @@ struct ScrumLogoView: View {
             .fill(
                 LinearGradient(
                     colors: [
-                        Color(red: 0.45, green: 0.30, blue: 0.95),
-                        Color(red: 0.85, green: 0.30, blue: 0.75),
-                        Color(red: 1.00, green: 0.50, blue: 0.50)
+                        Color(red: 0.00, green: 0.31, blue: 0.48), // Dark Blue (#00507A)
+                        Color(red: 0.00, green: 0.59, blue: 0.65)  // Teal (#0096A6)
                     ],
                     startPoint: .topLeading,
                     endPoint: .bottomTrailing
@@ -107,7 +106,7 @@ struct ScrumLogoView: View {
                         .font(.system(size: size * 0.18, weight: .heavy))
                         .foregroundStyle(
                             LinearGradient(
-                                colors: [Color.purple, Color.pink],
+                                colors: [.white, Color(red: 0.00, green: 0.59, blue: 0.65)],
                                 startPoint: .top,
                                 endPoint: .bottom
                             )
@@ -157,10 +156,11 @@ struct ScrumWordmarkView: View {
         VStack(spacing: 12) {
             ScrumLogoView(size: 88)
             VStack(spacing: 2) {
-                Text("Scrum Flashcards")
+                Text("Professional Scrum Flashcards")
                     .font(.title.weight(.black))
                     .foregroundStyle(.white)
                     .shadow(color: .black.opacity(0.15), radius: 4, y: 2)
+                    .scaleEffect(0.75)
                 Text("Master the framework, one card at a time")
                     .font(.footnote.weight(.medium))
                     .foregroundStyle(.white.opacity(0.9))
@@ -172,7 +172,7 @@ struct ScrumWordmarkView: View {
 #Preview("Logo") {
     ZStack {
         LinearGradient(
-            colors: [Color.indigo, Color.purple, Color.pink.opacity(0.8)],
+            colors: [Color(red: 0.00, green: 0.31, blue: 0.48), Color(red: 0.00, green: 0.59, blue: 0.65)],
             startPoint: .topLeading,
             endPoint: .bottomTrailing
         )

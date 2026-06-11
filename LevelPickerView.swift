@@ -96,9 +96,14 @@ struct LevelPickerView: View {
 
     private var background: some View {
         LinearGradient(
-            colors: [Color.indigo, Color.purple, Color.pink.opacity(0.8)],
-            startPoint: .topLeading,
-            endPoint: .bottomTrailing
+            colors: [
+                Color.black,
+                Color(red: 0.00, green: 0.31, blue: 0.48).opacity(0.8),
+                Color(red: 0.00, green: 0.59, blue: 0.65).opacity(0.4),
+                Color.black
+            ],
+            startPoint: .top,
+            endPoint: .bottom
         )
         .ignoresSafeArea()
     }

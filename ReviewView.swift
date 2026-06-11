@@ -33,13 +33,14 @@ struct ReviewView: View {
                     correctCount: correctCount,
                     incorrectCount: incorrectCount,
                     isMastered: isMastered,
+                    mode: .reviewing,
                     onAnswer: handleAnswer,
                     onNext: advance
                 )
                 .id(cards[index].id)
                 .transition(.asymmetric(
-                    insertion: .move(edge: .trailing).combined(with: .opacity),
-                    removal: .move(edge: .leading).combined(with: .opacity)
+                    insertion: .move(edge: .trailing).combined(with: .opacity).combined(with: .scale(scale: 0.95)),
+                    removal: .move(edge: .leading).combined(with: .opacity).combined(with: .scale(scale: 1.05))
                 ))
                 .animation(.spring(response: 0.45, dampingFraction: 0.85), value: index)
             } else {
@@ -61,9 +62,13 @@ struct ReviewView: View {
 
     private var backgroundGradient: LinearGradient {
         LinearGradient(
-            colors: [Color.indigo, Color.red.opacity(0.6), Color.purple],
-            startPoint: .topLeading,
-            endPoint: .bottomTrailing
+            colors: [
+                Color.black,
+                Color(red: 0.00, green: 0.31, blue: 0.48).opacity(0.4),
+                Color.black
+            ],
+            startPoint: .top,
+            endPoint: .bottom
         )
     }
 
@@ -86,7 +91,7 @@ struct ReviewView: View {
                     .padding(.horizontal, 22)
                     .padding(.vertical, 12)
                     .background(Capsule().fill(.white))
-                    .foregroundStyle(Color.indigo)
+                    .foregroundStyle(Color(red: 0.00, green: 0.31, blue: 0.48))
             }
             .padding(.top, 6)
         }
@@ -111,7 +116,7 @@ struct ReviewView: View {
                     .padding(.horizontal, 22)
                     .padding(.vertical, 12)
                     .background(Capsule().fill(.white))
-                    .foregroundStyle(Color.indigo)
+                    .foregroundStyle(Color(red: 0.00, green: 0.31, blue: 0.48))
             }
             .padding(.top, 6)
         }

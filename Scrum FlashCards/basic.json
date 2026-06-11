@@ -1,6 +1,12 @@
 [
   {
     "id": "B01",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The",
     "suffix": "is accountable for maximizing the value of the product.",
     "answer": "Product Owner",
@@ -13,18 +19,30 @@
   },
   {
     "id": "B02",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "A Sprint in Scrum is time-boxed to a maximum of",
     "suffix": ".",
     "answer": "one month",
     "distractors": [
       "one week",
-      "four weeks",
+      "three weeks",
       "three months"
     ],
     "level": "basic"
   },
   {
     "id": "B03",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The",
     "suffix": "is a daily 15-minute event for the Developers.",
     "answer": "Daily Scrum",
@@ -37,6 +55,12 @@
   },
   {
     "id": "B04",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The artifact that represents an ordered list of what is needed to create value for the product is the",
     "suffix": ".",
     "answer": "Product Backlog",
@@ -49,11 +73,17 @@
   },
   {
     "id": "B05",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The",
     "suffix": "is accountable for establishing Scrum as defined in the Scrum Guide.",
     "answer": "Scrum Master",
     "distractors": [
-      "Product Owner",
+      "Project Owner",
       "Project Manager",
       "Team Lead"
     ],
@@ -61,6 +91,12 @@
   },
   {
     "id": "B06",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The three pillars of empiricism are transparency, inspection, and",
     "suffix": ".",
     "answer": "adaptation",
@@ -73,30 +109,48 @@
   },
   {
     "id": "B07",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "Each Sprint begins with",
-    "suffix": ".",
-    "answer": "the Sprint Planning",
+    "suffix": " event.",
+    "answer": "Sprint Planning",
     "distractors": [
-      "the Daily Scrum",
-      "the Sprint Review",
-      "the Sprint Retrospective"
+      "Daily Scrum",
+      "Sprint Review",
+      "Sprint Retrospective"
     ],
     "level": "basic"
   },
   {
     "id": "B08",
-    "prompt": "Scrum is founded on empiricism and",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "Scrum is founded on",
     "suffix": ".",
-    "answer": "lean thinking",
+    "answer": "empiricism",
     "distractors": [
-      "detailed upfront planning",
+      "detailed planning",
       "phase-gate control",
-      "individual heroics"
+      "team leaders"
     ],
     "level": "basic"
   },
   {
     "id": "B09",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "Empiricism asserts that knowledge comes from experience and making decisions based on what is",
     "suffix": ".",
     "answer": "known",
@@ -109,35 +163,53 @@
   },
   {
     "id": "B10",
-    "prompt": "Lean thinking reduces waste and focuses on the",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "Scrum Values are Openness, Respect, Courage, Focus and ",
     "suffix": ".",
-    "answer": "essentials",
+    "answer": "Commitment",
     "distractors": [
-      "process owner",
-      "schedule baseline",
-      "contract"
+      "Bravery",
+      "Adaptability",
+      "Flexibility"
     ],
     "level": "basic"
   },
   {
     "id": "B11",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The Scrum framework consists of Scrum Teams and their associated accountabilities, events, artifacts, and",
     "suffix": ".",
     "answer": "rules",
     "distractors": [
-      "phases",
+      "commands",
       "departments",
-      "reports"
+      "stakeholders"
     ],
     "level": "basic"
   },
   {
     "id": "B12",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "Within a Scrum Team, there are no sub-teams or",
     "suffix": ".",
     "answer": "hierarchies",
     "distractors": [
-      "governance boards",
+      "board members",
       "stakeholders",
       "customers"
     ],
@@ -145,54 +217,84 @@
   },
   {
     "id": "B13",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The Scrum Team is cross-functional, meaning members have all the skills necessary to create a Done Increment each",
     "suffix": ".",
     "answer": "Sprint",
     "distractors": [
-      "release",
-      "quarter",
-      "project phase"
+      "Release",
+      "Week",
+      "Build"
     ],
     "level": "basic"
   },
   {
     "id": "B14",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The Scrum Team is self-managing, meaning it internally decides",
     "suffix": ".",
     "answer": "who does what, when, and how",
     "distractors": [
-      "how much budget is approved",
-      "which stakeholders may attend",
+      "how much money to spend",
+      "which stakeholders to attend",
       "which contract is signed"
     ],
     "level": "basic"
   },
   {
     "id": "B15",
-    "prompt": "The Scrum Team is accountable for creating a Done, useful",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "The Scrum Team is accountable for creating a Done, usable",
     "suffix": ".",
-    "answer": "Increment",
+    "answer": "product Increment",
     "distractors": [
+      "project build",
       "project plan",
-      "project charter",
-      "status report"
+      "road map"
     ],
     "level": "basic"
   },
   {
     "id": "B16",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The three Scrum accountabilities are Product Owner, Scrum Master, and",
     "suffix": ".",
     "answer": "Developers",
     "distractors": [
-      "Project Manager",
-      "Business Analyst",
-      "Sponsor"
+      "Project Managers",
+      "Business Analysts",
+      "Sponsors"
     ],
     "level": "basic"
   },
   {
     "id": "B17",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The Product Owner is one person, not a",
     "suffix": ".",
     "answer": "committee",
@@ -205,6 +307,12 @@
   },
   {
     "id": "B18",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The Product Owner may delegate work, but remains",
     "suffix": ".",
     "answer": "accountable",
@@ -217,19 +325,31 @@
   },
   {
     "id": "B19",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "Developers are the people in the Scrum Team accountable for creating a Done",
     "suffix": ".",
-    "answer": "Increment",
+    "answer": "product Increment",
     "distractors": [
       "roadmap",
       "product plan",
-      "requirement list"
+      "PBI"
     ],
     "level": "basic"
   },
   {
     "id": "B20",
-    "prompt": "Developers are always accountable for creating a plan for the Sprint, called the",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "Developers are always accountable for creating a plan for the Sprint, known as the",
     "suffix": ".",
     "answer": "Sprint Backlog",
     "distractors": [
@@ -241,6 +361,12 @@
   },
   {
     "id": "B21",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "Developers are accountable for instilling quality by adhering to the",
     "suffix": ".",
     "answer": "Definition of Done",
@@ -253,19 +379,31 @@
   },
   {
     "id": "B22",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "Developers are accountable for adapting their plan each day toward the",
     "suffix": ".",
     "answer": "Sprint Goal",
     "distractors": [
       "Product Vision",
       "release date",
-      "annual objective"
+      "OKR"
     ],
     "level": "basic"
   },
   {
     "id": "B23",
-    "prompt": "Developers are accountable for holding each other accountable as",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "Developers are responsible for holding each other accountable as",
     "suffix": ".",
     "answer": "professionals",
     "distractors": [
@@ -277,7 +415,13 @@
   },
   {
     "id": "B24",
-    "prompt": "The Scrum Master is accountable for the Scrum Team's",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "The Scrum Master is accountable for the Scrum Team\u0027s",
     "suffix": ".",
     "answer": "effectiveness",
     "distractors": [
@@ -289,42 +433,66 @@
   },
   {
     "id": "B25",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The Scrum Master helps everyone understand Scrum theory and",
     "suffix": ".",
     "answer": "practice",
     "distractors": [
-      "finance",
-      "procurement",
-      "branding"
+      "techniques",
+      "methodology",
+      "procedures"
     ],
     "level": "basic"
   },
   {
     "id": "B26",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The Scrum Master serves the Scrum Team, Product Owner, and",
     "suffix": ".",
     "answer": "organization",
     "distractors": [
-      "legal department only",
-      "vendors only",
-      "executive assistant"
+      "CEO",
+      "line managers",
+      "executives"
     ],
     "level": "basic"
   },
   {
     "id": "B27",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The Sprint is a container for all other Scrum",
     "suffix": ".",
     "answer": "events",
     "distractors": [
-      "roles",
-      "contracts",
-      "departments"
+      "rituals",
+      "responsibilities",
+      "ceremonies"
     ],
     "level": "basic"
   },
   {
     "id": "B28",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "Sprints are fixed length events of one month or less to create",
     "suffix": ".",
     "answer": "consistency",
@@ -337,139 +505,211 @@
   },
   {
     "id": "B29",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "A new Sprint starts immediately after the conclusion of the previous",
     "suffix": ".",
     "answer": "Sprint",
     "distractors": [
       "release",
       "project",
-      "quarter"
+      "week"
     ],
     "level": "basic"
   },
   {
     "id": "B30",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "During the Sprint, no changes are made that would endanger the",
     "suffix": ".",
     "answer": "Sprint Goal",
     "distractors": [
-      "budget baseline",
-      "team name",
-      "office layout"
+      "Daily Scrum",
+      "Sprint Backlog",
+      "Release Plan"
     ],
     "level": "basic"
   },
   {
     "id": "B31",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "During the Sprint, quality does not",
     "suffix": ".",
     "answer": "decrease",
     "distractors": [
       "increase",
-      "exist",
-      "matter"
+      "improve",
+      "important"
     ],
     "level": "basic"
   },
   {
     "id": "B32",
-    "prompt": "During the Sprint, the Product Backlog is refined as",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "During the Sprint, the Product Backlog is refined ",
     "suffix": ".",
-    "answer": "needed",
+    "answer": "as needed",
     "distractors": [
-      "never",
+      "as requested by CEO",
       "only after release",
-      "only by stakeholders"
+      "with stakeholders"
     ],
     "level": "basic"
   },
   {
     "id": "B33",
-    "prompt": "During the Sprint, scope may be clarified and renegotiated with the Product Owner as more is",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "During the Sprint, scope may be clarified and renegotiated with the Product Owner as ",
     "suffix": ".",
-    "answer": "learned",
+    "answer": "more is learned",
     "distractors": [
-      "sold",
-      "budgeted",
-      "signed"
+      "development stops",
+      "budget depletes",
+      "impediments arise"
     ],
     "level": "basic"
   },
   {
     "id": "B34",
-    "prompt": "Sprint Planning initiates the",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "A Sprint starts with",
     "suffix": ".",
-    "answer": "Sprint",
+    "answer": "Sprint Planning",
     "distractors": [
-      "release",
-      "budget cycle",
-      "hiring process"
+      "Daily Scrum",
+      "Planning Meeting",
+      "Scrum Planning"
     ],
     "level": "basic"
   },
   {
     "id": "B35",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The whole Scrum Team participates in",
     "suffix": ".",
-    "answer": "Sprint Planning",
+    "answer": "all of the above",
     "distractors": [
-      "only the Product Owner",
-      "only stakeholders",
-      "only managers"
+      "Sprint Planning",
+      "Sprint Review",
+      "Sprint Retrospective"
     ],
     "level": "basic"
   },
   {
     "id": "B36",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "Sprint Planning addresses why the Sprint is valuable, what can be Done, and how the chosen work will be",
     "suffix": ".",
     "answer": "done",
     "distractors": [
+      "reviewed",
       "reported",
-      "contracted",
       "outsourced"
     ],
     "level": "basic"
   },
   {
     "id": "B37",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The Product Owner proposes how the product could increase its value and utility in the current",
     "suffix": ".",
     "answer": "Sprint",
     "distractors": [
-      "budget",
-      "department",
-      "contract"
+      "conditions",
+      "organization",
+      "release"
     ],
     "level": "basic"
   },
   {
     "id": "B38",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The Sprint Goal communicates why the Sprint is valuable to",
     "suffix": ".",
-    "answer": "stakeholders",
+    "answer": "stakeholders (including customers)",
     "distractors": [
-      "vendors only",
-      "the project office",
-      "the finance system"
+      "testers",
+      "sponsors",
+      "CEO"
     ],
     "level": "basic"
   },
   {
     "id": "B39",
-    "prompt": "The Developers select Product Backlog items to include in the current",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "The Developers select items from the Product Backlog to include in the current",
     "suffix": ".",
     "answer": "Sprint",
     "distractors": [
-      "budget cycle",
-      "organization chart",
-      "contract"
+      "test phase",
+      "requirements",
+      "problems"
     ],
     "level": "basic"
   },
   {
     "id": "B40",
-    "prompt": "The resulting plan from Sprint Planning is the",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "The resulting plan from Sprint Planning event is the",
     "suffix": ".",
     "answer": "Sprint Backlog",
     "distractors": [
@@ -481,43 +721,67 @@
   },
   {
     "id": "B41",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "Sprint Planning is time-boxed to a maximum of eight hours for a one-month",
     "suffix": ".",
     "answer": "Sprint",
     "distractors": [
       "project",
       "release",
-      "year"
+      "duration"
     ],
     "level": "basic"
   },
   {
     "id": "B42",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The Daily Scrum is a 15-minute event for the",
     "suffix": ".",
     "answer": "Developers",
     "distractors": [
       "stakeholders",
-      "Product Owner only",
-      "executives"
+      "Product Owner",
+      "Scrum Master"
     ],
     "level": "basic"
   },
   {
     "id": "B43",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The purpose of the Daily Scrum is to inspect progress toward the Sprint Goal and adapt the",
     "suffix": ".",
     "answer": "Sprint Backlog",
     "distractors": [
       "Product Goal",
       "Definition of Done",
-      "contract"
+      "scope of product"
     ],
     "level": "basic"
   },
   {
     "id": "B44",
-    "prompt": "The Daily Scrum is held at the same time and place every working day of the Sprint to reduce",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "The Daily Scrum may be held at the same time and place every day  to reduce",
     "suffix": ".",
     "answer": "complexity",
     "distractors": [
@@ -529,7 +793,13 @@
   },
   {
     "id": "B45",
-    "prompt": "The Developers can select whatever structure and techniques they want for the",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "Developers can select whatever structure and techniques they want for the",
     "suffix": ".",
     "answer": "Daily Scrum",
     "distractors": [
@@ -541,19 +811,31 @@
   },
   {
     "id": "B46",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The Sprint Review is held to inspect the outcome of the Sprint and determine future",
     "suffix": ".",
     "answer": "adaptations",
     "distractors": [
-      "vacations",
-      "contracts",
-      "job titles"
+      "variations",
+      "commitments",
+      "releases"
     ],
     "level": "basic"
   },
   {
     "id": "B47",
-    "prompt": "The Scrum Team presents the results of their work to key stakeholders during the",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "The Scrum Team presents the results of their work to stakeholders (including customers) during the",
     "suffix": ".",
     "answer": "Sprint Review",
     "distractors": [
@@ -565,11 +847,17 @@
   },
   {
     "id": "B48",
-    "prompt": "The Sprint Review is a working session and should not be limited to a",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "Sprint Review is a working session and should not be limited to a",
     "suffix": ".",
-    "answer": "presentation",
+    "answer": "presentation and demo",
     "distractors": [
-      "time-box",
+      "meeting",
       "conversation",
       "product discussion"
     ],
@@ -577,6 +865,12 @@
   },
   {
     "id": "B49",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "For a one-month Sprint, the Sprint Review is time-boxed to a maximum of",
     "suffix": ".",
     "answer": "four hours",
@@ -589,19 +883,31 @@
   },
   {
     "id": "B50",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The purpose of the Sprint Retrospective is to plan ways to increase quality and",
     "suffix": ".",
     "answer": "effectiveness",
     "distractors": [
-      "headcount",
-      "scope",
-      "approval"
+      "new hires",
+      "Product Scope",
+      "budget approval"
     ],
     "level": "basic"
   },
   {
     "id": "B51",
-    "prompt": "The Scrum Team inspects how the last Sprint went during the",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "Scrum Team inspects how the last Sprint went during ",
     "suffix": ".",
     "answer": "Sprint Retrospective",
     "distractors": [
@@ -613,6 +919,12 @@
   },
   {
     "id": "B52",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "For a one-month Sprint, the Sprint Retrospective is time-boxed to a maximum of",
     "suffix": ".",
     "answer": "three hours",
@@ -625,78 +937,120 @@
   },
   {
     "id": "B53",
-    "prompt": "Scrum's artifacts represent work or value and are designed to maximize",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "Scrum\u0027s artifacts represent work or value and are designed to maximize",
     "suffix": ".",
     "answer": "transparency",
     "distractors": [
       "utilization",
       "documentation",
-      "handoffs"
+      "releases"
     ],
     "level": "basic"
   },
   {
     "id": "B54",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "Each Scrum artifact contains a commitment to ensure information that enhances",
     "suffix": ".",
     "answer": "transparency",
     "distractors": [
-      "individual ranking",
-      "financial approval",
-      "resource allocation"
+      "product plan",
+      "financial plan",
+      "resource plan"
     ],
     "level": "basic"
   },
   {
     "id": "B55",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The three Scrum artifacts are Product Backlog, Sprint Backlog, and",
     "suffix": ".",
-    "answer": "Increment",
+    "answer": "Product Increment",
     "distractors": [
       "Roadmap",
       "Burndown Chart",
-      "Business Case"
+      "Release Plan"
     ],
     "level": "basic"
   },
   {
     "id": "B56",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The Product Backlog is an emergent, ordered list of what is needed to improve the",
     "suffix": ".",
     "answer": "product",
     "distractors": [
-      "organization chart",
-      "contract",
-      "timesheet"
+      "process",
+      "methods",
+      "procedures"
     ],
     "level": "basic"
   },
   {
     "id": "B57",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "Product Backlog items that can be Done by the Scrum Team within one Sprint are deemed",
     "suffix": ".",
     "answer": "ready for selection",
     "distractors": [
       "approved for release",
-      "assigned to management",
-      "frozen"
+      "as high value items",
+      "fixed scope"
     ],
     "level": "basic"
   },
   {
     "id": "B58",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "Product Backlog refinement is the act of breaking down and further defining Product Backlog items into smaller, more precise",
     "suffix": ".",
     "answer": "items",
     "distractors": [
-      "contracts",
-      "roles",
-      "departments"
+      "tests",
+      "measures",
+      "builds"
     ],
     "level": "basic"
   },
   {
     "id": "B59",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "Product Backlog refinement is an ongoing",
     "suffix": ".",
     "answer": "activity",
@@ -709,6 +1063,12 @@
   },
   {
     "id": "B60",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The commitment for the Product Backlog is the",
     "suffix": ".",
     "answer": "Product Goal",
@@ -721,6 +1081,12 @@
   },
   {
     "id": "B61",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The Product Goal describes a future state of the product which can serve as a target for the Scrum Team to",
     "suffix": ".",
     "answer": "plan against",
@@ -733,42 +1099,66 @@
   },
   {
     "id": "B62",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The Sprint Backlog is composed of the Sprint Goal, selected Product Backlog items, and a plan for delivering the",
     "suffix": ".",
     "answer": "Increment",
     "distractors": [
-      "budget",
-      "contract",
-      "roadmap"
+      "items",
+      "requirements",
+      "release"
     ],
     "level": "basic"
   },
   {
     "id": "B63",
-    "prompt": "The Sprint Backlog is a plan by and for the",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "Sprint Backlog is a plan by and for the",
     "suffix": ".",
     "answer": "Developers",
     "distractors": [
-      "stakeholders",
-      "project office",
-      "sales department"
+      "Scrum Master",
+      "Project Manager",
+      "Product Owner"
     ],
     "level": "basic"
   },
   {
     "id": "B64",
-    "prompt": "The Sprint Backlog is updated throughout the Sprint as more is",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "Sprint Backlog is updated throughout the Sprint as more ",
     "suffix": ".",
-    "answer": "learned",
+    "answer": "is learned",
     "distractors": [
-      "invoiced",
-      "contracted",
-      "authorized"
+      "work arrives",
+      "tests are required",
+      "Developers are required"
     ],
     "level": "basic"
   },
   {
     "id": "B65",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The commitment for the Sprint Backlog is the",
     "suffix": ".",
     "answer": "Sprint Goal",
@@ -781,103 +1171,157 @@
   },
   {
     "id": "B66",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The Sprint Goal is the single objective for the",
     "suffix": ".",
     "answer": "Sprint",
     "distractors": [
       "product",
       "organization",
-      "portfolio"
+      "release"
     ],
     "level": "basic"
   },
   {
     "id": "B67",
-    "prompt": "The Sprint Goal provides flexibility in terms of the exact work needed to achieve",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "Sprint Goal provides flexibility in terms of the work needed to",
     "suffix": ".",
-    "answer": "it",
+    "answer": "achieve it",
     "distractors": [
-      "a contract",
-      "a fixed scope",
-      "a department target"
+      "guarantee it",
+      "fix the scope",
+      "release it"
     ],
     "level": "basic"
   },
   {
     "id": "B68",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "An Increment is a concrete stepping stone toward the",
     "suffix": ".",
     "answer": "Product Goal",
     "distractors": [
-      "team hierarchy",
-      "annual budget",
-      "project charter"
+      "Product Release",
+      "Product Success",
+      "Project Closing"
     ],
     "level": "basic"
   },
   {
     "id": "B69",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "Each Increment is additive to all prior Increments and thoroughly",
     "suffix": ".",
     "answer": "verified",
     "distractors": [
       "estimated",
       "assigned",
-      "postponed"
+      "released"
     ],
     "level": "basic"
   },
   {
     "id": "B70",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "Multiple Increments may be created within a",
     "suffix": ".",
     "answer": "Sprint",
     "distractors": [
-      "Daily Scrum",
-      "single hour only",
-      "project phase"
+      "Sprint Review",
+      "week",
+      "release session"
     ],
     "level": "basic"
   },
   {
     "id": "B71",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "Work cannot be considered part of an Increment unless it meets the",
     "suffix": ".",
     "answer": "Definition of Done",
     "distractors": [
       "Product Goal",
       "release plan",
-      "stakeholder request"
+      "requirements"
     ],
     "level": "basic"
   },
   {
     "id": "B72",
-    "prompt": "The Definition of Done is a formal description of the state of the Increment when it meets required quality",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "Definition of Done is a formal description of the state of the Increment when it meets required",
     "suffix": ".",
-    "answer": "measures",
+    "answer": "quality measures",
     "distractors": [
-      "opinions",
+      "user approvals",
       "budgets",
-      "roles"
+      "comments"
     ],
     "level": "basic"
   },
   {
     "id": "B73",
-    "prompt": "The moment a Product Backlog item meets the Definition of Done, an Increment is",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "The moment a Product Backlog item meets the Definition of Done, an Increment is ",
     "suffix": ".",
     "answer": "born",
     "distractors": [
-      "cancelled",
-      "estimated",
-      "delegated"
+      "released",
+      "built",
+      "used"
     ],
     "level": "basic"
   },
   {
     "id": "B74",
-    "prompt": "The Definition of Done creates transparency by providing everyone a shared understanding of what work was",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "Definition of Done creates transparency by providing everyone a shared understanding of what work was",
     "suffix": ".",
     "answer": "completed",
     "distractors": [
@@ -889,6 +1333,12 @@
   },
   {
     "id": "B75",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "If a Product Backlog item does not meet the Definition of Done, it cannot be",
     "suffix": ".",
     "answer": "released",
@@ -901,35 +1351,53 @@
   },
   {
     "id": "B76",
-    "prompt": "If the Definition of Done is an organizational standard, all Scrum Teams must follow it as a",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "If the Definition of Done is an organizational standard, all Scrum Teams must follow it  ",
     "suffix": ".",
-    "answer": "minimum",
+    "answer": "as a minimum",
     "distractors": [
-      "maximum",
-      "suggestion",
-      "replacement for Scrum"
+      "as a maximum",
+      "as suggestion",
+      "as is"
     ],
     "level": "basic"
   },
   {
     "id": "B77",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "If there is no organizational Definition of Done, the Scrum Team must create one appropriate for the",
     "suffix": ".",
     "answer": "product",
     "distractors": [
-      "department",
-      "budget",
-      "vendor"
+      "team",
+      "Product Owner",
+      "Developers"
     ],
     "level": "basic"
   },
   {
     "id": "B78",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "If multiple Scrum Teams work together on a product, they must mutually define and comply with the same",
     "suffix": ".",
     "answer": "Definition of Done",
     "distractors": [
-      "Sprint Goal",
+      "Release Plan",
       "Scrum Master",
       "Daily Scrum agenda"
     ],
@@ -937,114 +1405,174 @@
   },
   {
     "id": "B79",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The five Scrum values are Commitment, Focus, Openness, Respect, and",
     "suffix": ".",
     "answer": "Courage",
     "distractors": [
-      "Control",
-      "Compliance",
+      "Communication",
+      "Patience",
       "Coordination"
     ],
     "level": "basic"
   },
   {
     "id": "B80",
-    "prompt": "The Scrum values give direction to the Scrum Team with regard to their work, actions, and",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "Scrum Values give direction to the Scrum Team with regard to their work, actions, and",
     "suffix": ".",
     "answer": "behavior",
     "distractors": [
-      "job titles",
-      "contracts",
-      "office layout"
+      "hierarchies",
+      "roles",
+      "titles"
     ],
     "level": "basic"
   },
   {
     "id": "B81",
-    "prompt": "Successful use of Scrum depends on people becoming more proficient in living the Scrum",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "Successful use of Scrum depends on people becoming more proficient in ",
     "suffix": ".",
-    "answer": "values",
+    "answer": "living Scrum Values",
     "distractors": [
-      "charts",
-      "tools",
-      "templates"
+      "methods",
+      "plans",
+      "communications"
     ],
     "level": "basic"
   },
   {
     "id": "B82",
-    "prompt": "The Scrum Team commits to achieving its goals and to supporting each",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "The Scrum Team commits to achieving its goals and to supporting ",
     "suffix": ".",
-    "answer": "other",
+    "answer": "each other",
     "distractors": [
-      "vendor",
-      "contract",
-      "phase gate"
+      "customers",
+      "managers",
+      "releases"
     ],
     "level": "basic"
   },
   {
     "id": "B83",
-    "prompt": "The Scrum Team's primary focus is the work of the",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "Scrum Team\u0027s primary focus is the work of",
     "suffix": ".",
-    "answer": "Sprint",
+    "answer": "the Sprint",
     "distractors": [
-      "annual budget",
-      "organizational hierarchy",
+      "monthly plan",
+      "release plan",
       "department plan"
     ],
     "level": "basic"
   },
   {
     "id": "B84",
-    "prompt": "The Scrum Team and stakeholders are open about the work and the",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "Scrum Team and stakeholders are open about the work and the",
     "suffix": ".",
     "answer": "challenges",
     "distractors": [
-      "salaries",
-      "private data",
-      "contracts"
+      "budget cuts",
+      "new work from managers",
+      "bugs"
     ],
     "level": "basic"
   },
   {
     "id": "B85",
-    "prompt": "Scrum Team members respect each other to be capable, independent",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "Scrum Team members respect each other to be capable, ",
     "suffix": ".",
-    "answer": "people",
+    "answer": "independent people",
     "distractors": [
-      "resources",
-      "subordinates",
-      "vendors"
+      "valuable resources",
+      "work friends",
+      "temporary team members"
     ],
     "level": "basic"
   },
   {
     "id": "B86",
-    "prompt": "Scrum Team members have the courage to do the right thing and work on tough",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "Scrum Team members have the courage to do the right thing and work on ",
     "suffix": ".",
-    "answer": "problems",
+    "answer": "tough problems",
     "distractors": [
-      "reports",
-      "titles",
-      "templates"
+      "required reports",
+      "work titles",
+      "work templates"
     ],
     "level": "basic"
   },
   {
     "id": "B87",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "Scrum is immutable, meaning Scrum exists only in its",
     "suffix": ".",
     "answer": "entirety",
     "distractors": [
-      "contract form",
+      "method",
       "software tool",
-      "reporting hierarchy"
+      "hierarchy"
     ],
     "level": "basic"
   },
   {
     "id": "B88",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "Implementing only parts of Scrum is possible, but the result is not",
     "suffix": ".",
     "answer": "Scrum",
@@ -1057,6 +1585,12 @@
   },
   {
     "id": "B89",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The Scrum framework is purposefully",
     "suffix": ".",
     "answer": "incomplete",
@@ -1069,30 +1603,48 @@
   },
   {
     "id": "B90",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "Scrum is built upon the collective intelligence of the people using",
     "suffix": ".",
-    "answer": "it",
+    "answer": "Scrum",
     "distractors": [
       "Gantt charts",
-      "contracts",
-      "approval boards"
+      "requirements",
+      "approval plans"
     ],
     "level": "basic"
   },
   {
     "id": "B91",
-    "prompt": "Scrum makes visible the relative efficacy of current management, environment, and work",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "Scrum makes visible the relative efficacy of current management, environment, and ",
     "suffix": ".",
-    "answer": "techniques",
+    "answer": "work techniques",
     "distractors": [
       "job grades",
-      "accounting rules",
+      "manager behaviours",
       "office layouts"
     ],
     "level": "basic"
   },
   {
     "id": "B92",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "Scrum wraps around existing practices or renders them",
     "suffix": ".",
     "answer": "unnecessary",
@@ -1105,31 +1657,49 @@
   },
   {
     "id": "B93",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "Scrum employs an iterative, incremental approach to optimize predictability and control",
     "suffix": ".",
     "answer": "risk",
     "distractors": [
       "people",
-      "headcount",
-      "titles"
+      "members",
+      "methods"
     ],
     "level": "basic"
   },
   {
     "id": "B94",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "The Scrum Team is small enough to remain nimble and large enough to complete significant work within a",
     "suffix": ".",
     "answer": "Sprint",
     "distractors": [
       "quarter",
-      "department",
-      "program"
+      "month",
+      "release phase"
     ],
     "level": "basic"
   },
   {
     "id": "B95",
-    "prompt": "The Scrum Team is typically 10 or fewer",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "A Scrum Team is typically 10 or fewer",
     "suffix": ".",
     "answer": "people",
     "distractors": [
@@ -1141,33 +1711,51 @@
   },
   {
     "id": "B96",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "Smaller Scrum Teams communicate better and are more",
     "suffix": ".",
     "answer": "productive",
     "distractors": [
       "documented",
       "hierarchical",
-      "contractual"
+      "methodical"
     ],
     "level": "basic"
   },
   {
     "id": "B97",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
     "prompt": "If Scrum Teams become too large, they should consider reorganizing into multiple cohesive Scrum Teams focused on the same",
     "suffix": ".",
     "answer": "product",
     "distractors": [
-      "manager",
-      "timesheet",
-      "phase"
+      "department",
+      "customers",
+      "release"
     ],
     "level": "basic"
   },
   {
     "id": "B98",
-    "prompt": "Scrum Teams working on the same product should share the same Product Goal, Product Backlog, and Product",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "Scrum Teams working on the same product should share the same Product Goal, Product Backlog, and ",
     "suffix": ".",
-    "answer": "Owner",
+    "answer": "Product Owner",
     "distractors": [
       "Sprint Backlog",
       "Daily Scrum",
@@ -1177,25 +1765,37 @@
   },
   {
     "id": "B99",
-    "prompt": "The Product Owner is accountable for effective Product Backlog",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "A Product Owner is accountable for effective Product Backlog",
     "suffix": ".",
     "answer": "management",
     "distractors": [
-      "team salaries",
-      "technical implementation",
-      "office seating"
+      "items",
+      "implementation",
+      "valuation"
     ],
     "level": "basic"
   },
   {
     "id": "B100",
-    "prompt": "Product Backlog management includes developing and explicitly communicating the Product",
+    "title": "",
+    "description": "",
+    "question": "",
+    "options": [],
+    "correctAnswer": "",
+    "category": "",
+    "prompt": "Product Backlog management includes developing and explicitly communicating the",
     "suffix": ".",
-    "answer": "Goal",
+    "answer": "Product Goal",
     "distractors": [
       "Sprint Retrospective",
       "Daily Scrum",
-      "team hierarchy"
+      "Roadmap"
     ],
     "level": "basic"
   }

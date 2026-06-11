@@ -20,6 +20,7 @@ struct PracticeView: View {
     @State private var didLoad = false
     @State private var startTime = Date()
     @State private var cardStartTime = Date()
+    @State private var currentMode: FlashcardView.Mode = .learning
 
     var body: some View {
         ZStack {
@@ -27,24 +28,24 @@ struct PracticeView: View {
 
             VStack(spacing: 0) {
                 if !cards.isEmpty && index < cards.count {
-                    let isMastered = ProgressStore(context: context).cardProgress(for: cards[index].id).isMastered
+                    let progress = ProgressStore(context: context).cardProgress(for: cards[index].id)
                     FlashcardView(
                         card: cards[index],
                         index: index,
                         total: cards.count,
                         correctCount: correctCount,
                         incorrectCount: incorrectCount,
-                        isMastered: isMastered,
+                        isMastered: progress.isMastered,
+                        mode: currentMode,
                         onAnswer: handleAnswer,
                         onNext: advance
                     )
                     .id(cards[index].id)
                     .transition(.asymmetric(
-                        insertion: .move(edge: .trailing).combined(with: .opacity),
-                        removal: .move(edge: .leading).combined(with: .opacity)
+                        insertion: .move(edge: .trailing).combined(with: .opacity).combined(with: .scale(scale: 0.95)),
+                        removal: .move(edge: .leading).combined(with: .opacity).combined(with: .scale(scale: 1.05))
                     ))
                 }
-                Spacer(minLength: 40)
             }
             .animation(.spring(response: 0.45, dampingFraction: 0.85), value: index)
         }
@@ -78,9 +79,9 @@ struct PracticeView: View {
 
     private var backgroundGradient: LinearGradient {
         LinearGradient(
-            colors: [Color.indigo, level.accent.opacity(0.7), Color.purple],
-            startPoint: .topLeading,
-            endPoint: .bottomTrailing
+            colors: [Color.black, level.accent.opacity(0.3), Color.black],
+            startPoint: .top,
+            endPoint: .bottom
         )
     }
 
@@ -110,6 +111,7 @@ struct PracticeView: View {
         } else {
             startFreshAttempt(store: store)
         }
+        updateCurrentMode()
     }
 
     private func resumeDeck(from ids: [String]) -> [Flashcard]? {
@@ -172,6 +174,7 @@ struct PracticeView: View {
         if index + 1 < cards.count {
             index += 1
             lp.inProgressIndex = index
+            updateCurrentMode()
         } else {
             finalize(store: store)
         }
@@ -226,7 +229,14 @@ struct PracticeView: View {
         cardStartTime = Date()
         let store = ProgressStore(context: context)
         startFreshAttempt(store: store)
+        updateCurrentMode()
         TelemetryManager.shared.trackSessionStart(level: level.rawValue)
+    }
+
+    private func updateCurrentMode() {
+        guard index < cards.count else { return }
+        let progress = ProgressStore(context: context).cardProgress(for: cards[index].id)
+        currentMode = progress.totalAttempts > 0 ? .reviewing : .learning
     }
 }
 
