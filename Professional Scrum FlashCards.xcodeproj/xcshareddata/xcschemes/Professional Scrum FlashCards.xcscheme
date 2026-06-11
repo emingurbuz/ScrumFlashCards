@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "70CEA2332FD0A57E0092E25F"
-               BuildableName = "Professional Scrum FlashCards.app"
-               BlueprintName = "Professional Scrum FlashCards"
+               BuildableName = "Scrum FlashCards.app"
+               BlueprintName = "Scrum FlashCards"
                ReferencedContainer = "container:Professional Scrum FlashCards.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,8 +46,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "70CEA2332FD0A57E0092E25F"
-            BuildableName = "Professional Scrum FlashCards.app"
-            BlueprintName = "Professional Scrum FlashCards"
+            BuildableName = "Scrum FlashCards.app"
+            BlueprintName = "Scrum FlashCards"
             ReferencedContainer = "container:Professional Scrum FlashCards.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -69,8 +69,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "70CEA2332FD0A57E0092E25F"
-            BuildableName = "Professional Scrum FlashCards.app"
-            BlueprintName = "Professional Scrum FlashCards"
+            BuildableName = "Scrum FlashCards.app"
+            BlueprintName = "Scrum FlashCards"
             ReferencedContainer = "container:Professional Scrum FlashCards.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
